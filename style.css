@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main-color: #e56868;
+    --second-color: #232323;
+    --third-color: #f0f0f0dc;
+    --white: #fff;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+*::selection {
+    color: var(--white);
+    background: var(--main-color);
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    box-shadow: 0 4px 41px rgb(14, 55, 54 / 14%);
+    padding: 8px 10%;
+    transition: 0.2s;
+}
+
+.community {
+    display: flex;
+    font-size: 1.3rem;
+    padding: 11px 20px;
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 0.8rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--white);
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-img {
+    flex: 1 1 17rem;
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    color: var(--second-color);
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.btn {
+    padding: 7px 40px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.btn:hover {
+    color: var(--white);
+    background: var(--second-color);
+}
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--third-color);
+    gap: 1rem;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.heading span {
+    color: var(--second-color);
+}
+
+.about-content, 
+.act-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.about-img,
+.act-img {
+    flex: 1 1 17rem;
+}
+
+.about-img img,
+.act-img img {
+    border-radius: 5%;
+}
+
+.about-text,
+.act-text {
+    flex: 1 1 17rem;
+}
+
+.about-text h2 {
+    font-size: 1.7rem;
+    color: var(--second-color);
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.act-text h2 {
+    font-size: 1.7rem;
+    color: var(--second-color);
+    margin-top: 10%;
+    margin-bottom: 2%;
+    text-align: right;
+}
+
+.about-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.act-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.joinus {
+    background: linear-gradient(to top right, #e56868, #e88484);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joinus h2 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.joinus .box {
+    margin-top: 1rem;
+    background: var(--white);
+    border-radius: 0.4rem;
+    padding: 9px 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.joinus .box input {
+    border: none;
+    outline: none;
+}
+
+.joinus .btn {
+    margin-top: 2rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a {
+    font-size: 18px;
+    margin: 0.5rem;
+}
+
+.social a .fa-brands {
+    padding: 0.7rem;
+    color: var(--white);
+    background: var(--second-color);
+    border-radius: 50%;
+}
+
+.social a .fa-brands:hover {
+    background: var(--main-color);
+}
+
+.links {
+    margin: 1rem 0 1rem;
+}
+
+.links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+}
+
+.links a:hover {
+    color: var(--main-color);
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+
+@media (max-width: 1150px) {
+    header {
+        padding: 18px 7%;
+    }
+    section {
+        padding: 50px 7%;
+    }
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+    .home-text h2 {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        padding: 11px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--white);
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .home-text span {
+        font-size: 0.9rem;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+    .home-text h2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .home-text {
+        padding-top: inherit;
+    }
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+    .heading span {
+        font-size: 1.5rem;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 351px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+}
